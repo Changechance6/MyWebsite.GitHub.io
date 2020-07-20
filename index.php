@@ -18,8 +18,8 @@ function plugin_l2d(){
 function plugin_l2d_option_page(){
     if(!current_user_can('manage_options')) wp_die('抱歉，您没有权限来更改设置');
     if(isset($_POST['update_options'])){
-        update_option('plugin_l2d_move',(isset($_POST['move'])&&$_POST['move']=='0'));
-        update_option('plugin_l2d_mobile',(isset($_POST['mobile'])&&$_POST['mobile']=='0'));
+        update_option('plugin_l2d_move',(isset($_POST['move'])&&$_POST['move']=='1'));
+        update_option('plugin_l2d_mobile',(isset($_POST['mobile'])&&$_POST['mobile']=='1'));
         update_option('plugin_l2d_jq',(isset($_POST['jq'])&&$_POST['jq']=='1'));
         update_option('plugin_l2d_fa',(isset($_POST['fa'])&&$_POST['fa']=='1'));
         echo '<div id="message" class="updated fade"><p>设置已保存</p></div>';
