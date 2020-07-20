@@ -283,10 +283,16 @@
 </script>
 <script type="text/javascript" src="/live2d/js/live2d.js"></script>
 <script type="text/javascript" src="/live2d/js/message.js"></script>
-<script type="text/javascript" src="/live2d/js/run_field.js"></script>
 <script type="text/javascript">
     loadlive2d("live2d", "/live2d/model/tia/model.json");
 </script>
+    <script type="text/javascript">
+        if (screen && screen.width > 860) {
+            document.write('<script type="text/javascript" src="https://haremu.com/wp-content/themes/Siren/live2d/js/live2d.js"><\/script>');
+            document.write('<script type="text/javascript" src="https://haremu.com/wp-content/themes/Siren/live2d/js/message.js"><\/script>');
+            document.write('<script type="text/javascript" src="https://haremu.com/wp-content/themes/Siren/live2d/js/run_field.js"><\/script>');
+        }
+    </script>
 
 </body>
 <script type="text/javascript" src="js/main.js"></script>
