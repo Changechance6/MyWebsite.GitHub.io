@@ -303,6 +303,10 @@ w.kbn_setting8='18px'; /*工具栏图标大小*/
 w.kbn_setting9='36px'; /*工具栏行高*/
 w.kbn_setting10=null; /*一言API可选'fghrsh.net', 'hitokoto.cn', 'jinrishici.com'(古诗词)*/
 /*－－－－以下勿改－－－－*/
+  const key = encodeURIComponent('看板娘:执行判断');
+ if(w[key] || navigator.connection.type != 'wifi'){return;}
+ try {
+  w[key] = true;
   const lib = document.createElement('script');
   lib.src = 'https://cdn.jsdelivr.net/gh/IlysvlVEizbr/Live2D@1.7/kbn.js';
   lib.defer = true;
